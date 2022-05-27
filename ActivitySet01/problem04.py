@@ -2,15 +2,11 @@
 
 hrs = float(input("Enter Hours:"))
 rate = float(input("Enter the Rate:"))
+pay = hrs * rate
 if hrs > 40:
-  regpay = hrs*rate
   extra = (hrs-40.0)*(rate * 0.5)
-  extrapay=regpay+extra
-  print(extrapay)
-else:
-  pay = (hrs*rate)
-  print(pay)
-        
+  pay=pay+extra
+print(pay)
 
 
         
