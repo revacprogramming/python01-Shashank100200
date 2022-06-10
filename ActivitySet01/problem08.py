@@ -17,3 +17,4 @@ for line in fhand:
 average = total/ count
 
 print("Average spam confidence:",average)
+ 
