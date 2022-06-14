@@ -1,15 +1,15 @@
 # Files
 
-fname = input("Enter file name: ")
-fhand = open(fname)
+file_name = input("Enter file name: ")
+file_hand = open(file_name)
 
 count = 0
-for line in fhand:
+for line in file_hand:
     if line.startswith("X-DSPAM-Confidence:") : 
         count = count + 1
 
 total = 0
-for line in fhand:
+for line in file_hand:
     if line.startswith("X-DSPAM-Confidence:"):
        line = float(line[21:])
        total = line + total
