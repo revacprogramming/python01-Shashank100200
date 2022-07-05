@@ -1,6 +1,4 @@
-# Dictionaries
-
-fhand = open("mbox-short.txt")
+fhand = open("sweety.txt")
 count = 0
 for line in fhand:
     line = line.rstrip()
